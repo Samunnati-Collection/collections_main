@@ -1,0 +1,23 @@
+import React from 'react'
+import QRCode from 'react-qr-code'
+
+export default function App(){
+  return (
+    <div style={{
+      height:'100vh',
+      background:'#007A33',
+      color:'white',
+      display:'flex',
+      flexDirection:'column',
+      justifyContent:'center',
+      alignItems:'center',
+      fontFamily:'Arial'
+    }}>
+      <h1 style={{marginBottom:'20px'}}>Samunnati Collection App</h1>
+      <div style={{background:'white', padding:'20px', borderRadius:'10px'}}>
+        <QRCode value="https://samunnati.com/payment" />
+      </div>
+      <p style={{marginTop:'20px', opacity:0.8}}>Scan to Pay (Demo)</p>
+    </div>
+  )
+}
